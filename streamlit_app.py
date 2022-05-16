@@ -3,7 +3,7 @@ import snowflake.connector
 import pandas as pd
 from PIL import Image
 
-st.set_page_config(page_title = "Füchse Berlin", layout = "wide")
+st.set_page_config(page_title = "SC Magdeburg", layout = "wide")
 
 # Check and printing sf connections
 st.text("Establishing Snowflake connection...")
@@ -26,14 +26,14 @@ st.header("Teamstatistik")
 col1, col2 = st.columns(2)
 
 #col1.subheader('Platzierungen Saison 2021/22')
-col1.markdown('**Tabellenplatz**: 4️⃣')
-col1.markdown('**Siege** | **Unentschieden** | **Niederlagen** : 21 | 4 | 4')
-col1.markdown('**Tore**: 858')
-col1.markdown("**Gegentore**: 753")
-col1.markdown("**Differenz**: 105")
-col1.markdown("**Bester 7m-Schütze**: Hans Lindberg(108/118/91.5%)")
-col1.markdown("**Sünder**: Mijajlo Marsenic (57)")
-col1.markdown("**Zuschauerschnitt**: 51972")
+col1.markdown('**Tabellenplatz**: 1️⃣')
+col1.markdown('**Siege** | **Unentschieden** | **Niederlagen** : 27 | 0 | 2')
+col1.markdown('**Tore**: 893')
+col1.markdown("**Gegentore**: 751")
+col1.markdown("**Differenz**: 142")
+col1.markdown("**Bester 7m-Schütze**: Omar Ingi Magnusson(90/121/91.5%)")
+col1.markdown("**Sünder**: Piotr Chrapkowski(51)")
+col1.markdown("**Ticketkäufe**: 107477")
 
 
 tabellenstand = Image.open('tabelle_hist_magdeburg.png')
