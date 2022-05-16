@@ -54,8 +54,6 @@ st.header("Spieler Gesamtstatistik")
 #my_data_rows = my_cur.fetchall()
 #data_berlin = st.dataframe(my_data_rows)
 
-# Spielwiese
-
 @st.cache
 def get_data_from_csv():
   df = pd.read_csv("kader_magdeburg_index_false.csv")
