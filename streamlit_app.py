@@ -16,7 +16,7 @@ st.text(my_data_row)
 
 
 # actual team info
-st.title('Füchse Berlin | Saison 2021/22')
+st.title('SC Magdeburg | Saison 2021/22')
 
 image = Image.open('kader_magdeburg.jpg')
 st.image(image)
@@ -36,7 +36,7 @@ col1.markdown("**Sünder**: Mijajlo Marsenic (57)")
 col1.markdown("**Zuschauerschnitt**: 51972")
 
 
-tabellenstand = Image.open('tabelle_hist_berlin.png')
+tabellenstand = Image.open('tabelle_hist_magdeburg.png')
 col2.image(tabellenstand)
 
 
