@@ -26,7 +26,7 @@ st.header("Teamstatistik")
 col1, col2 = st.columns(2)
 
 #col1.subheader('Platzierungen Saison 2021/22')
-col1.markdown('**Tabellenplatz**: 1️⃣👑')
+col1.markdown('**Tabellenplatz**: 1️⃣')
 col1.markdown('**Siege** | **Unentschieden** | **Niederlagen** : 27 | 0 | 2')
 col1.markdown('**Tore**: 893')
 col1.markdown("**Gegentore**: 751")
