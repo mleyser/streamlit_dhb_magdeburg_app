@@ -54,6 +54,10 @@ st.header("Spieler Gesamtstatistik")
 #my_data_rows = my_cur.fetchall()
 #data_berlin = st.dataframe(my_data_rows)
 
+with st.sidebar.container():
+  logo = Image.open('dhb_logo.png')
+  st.image(logo, use_column_width=True)
+
 @st.cache
 def get_data_from_csv():
   df = pd.read_csv("kader_magdeburg_index_false.csv")
@@ -63,10 +67,6 @@ df = get_data_from_csv()
 rad = st.sidebar.radio("Navigation",["Gesamtansicht","Gefilterte Ansicht"])
 
 # Sidebar
-with st.sidebar.container():
-  logo = Image.open('dhb_logo.png')
-  st.image(logo, use_column_width=True)
-
 
 if rad == "Gesamtansicht":
   st.text("Erstansicht absteigend nach geworfenen Toren sortiert")
