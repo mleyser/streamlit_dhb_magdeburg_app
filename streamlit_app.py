@@ -65,7 +65,7 @@ rad = st.sidebar.radio("Navigation",["Gesamtansicht","Gefilterte Ansicht"])
 # Sidebar
 with st.sidebar.container():
   logo = Image.open('dhb_logo.png')
-  st.image(logo, width= use_column_width=True)
+  st.image(logo, use_column_width=True)
 
 
 if rad == "Gesamtansicht":
